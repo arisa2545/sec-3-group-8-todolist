@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Inbox"
+    },
+    {
+      "name": "tertvtwt",
+      "id": 2
+    },
+    {
+      "name": "shopping",
+      "id": 3
+    }
+  ],
+  "lists": [
+    {
+      "category": "Inbox",
+      "name": "int203",
+      "description": "group project",
+      "isImportant": true,
+      "isComplete": false,
+      "id": 1
+    },
+    {
+      "category": "shopping",
+      "name": "car",
+      "description": "BMW",
+      "isImportant": true,
+      "isComplete": true,
+      "id": 2
+    },
+    {
+      "category": "shopping",
+      "name": "car",
+      "description": "BMW",
+      "isImportant": true,
+      "isComplete": false,
+      "id": 2
+    }
+  ]
+}

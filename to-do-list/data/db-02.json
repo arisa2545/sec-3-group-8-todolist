@@ -1,0 +1,16 @@
+{
+    "listCategory" : [
+        {
+           "id": 1,
+           "nameCategory": "Inbox",
+           "lists": [
+              {
+                 "name": "int203",
+                 "description": "group project",
+                 "isImportant": true,
+                 "isComplete": false
+              }
+           ]
+        }
+     ]
+}
