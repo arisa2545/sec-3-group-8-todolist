@@ -52,7 +52,7 @@ const inputCategoryToggle = () => {
 </script>
 
 <template>
-  <div class="p-3 ml-9 w-72 border-2" id="myList">
+  <div class="p-3 ml-9 w-72" id="myList">
     <p>My Category</p>
     <div class="h-3/4 overflow-y-auto">
       <router-link :to="{ name: 'All' }">

@@ -1,16 +1,27 @@
 <script setup>
-import { useRoute, useRouter } from 'vue-router'
+import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+import AddEditList from '../components/AddEditList.vue'
 import {
+  categories,
   lists,
   completeToggle,
   importantToggle,
-  removeList
+  removeList,
+  addNewList,
+  editList
 } from '../vue.js'
 
 let { params } = useRoute()
 console.log(params.category)
 
 const categorySeleced = params.category
+const currentList = ref({})
+
+const editMode = (list) => {
+  console.log('เข้า editmode')
+  currentList.value = list
+}
 </script>
 
 <template>
@@ -40,7 +51,7 @@ const categorySeleced = params.category
                 </label>
               </div>
 
-              <div class="grid grid-cols-2 items-center gap-x-2 ml-16">
+              <div class="grid grid-cols-3 items-center gap-x-2 ml-16">
                 <img
                   src="../assets/important.png"
                   v-if="list.isImportant"
@@ -51,6 +62,7 @@ const categorySeleced = params.category
                   v-if="!list.isImportant"
                   @click="importantToggle(list)"
                 />
+                <img src="../assets/edit.png" @click="editMode(list)" />
                 <img src="../assets/delete.png" @click="removeList(list.id)" />
               </div>
             </div>
@@ -61,8 +73,12 @@ const categorySeleced = params.category
         <hr />
         <br />
       </div>
-    
   </div>
+  <AddEditList
+    :currentList="currentList"
+    @add-new-list="addNewList"
+    @edit-list="editList"
+  ></AddEditList>
 </template>
 
 <style></style>

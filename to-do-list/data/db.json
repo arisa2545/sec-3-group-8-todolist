@@ -5,38 +5,46 @@
       "name": "Inbox"
     },
     {
-      "name": "tertvtwt",
-      "id": 2
-    },
-    {
       "name": "shopping",
       "id": 3
+    },
+    {
+      "name": "Home Work",
+      "id": 4
     }
   ],
   "lists": [
     {
-      "category": "Inbox",
+      "category": "Home Work",
       "name": "int203",
-      "description": "group project",
+      "description": "group project 02",
       "isImportant": true,
       "isComplete": false,
       "id": 1
     },
     {
       "category": "shopping",
-      "name": "car",
-      "description": "BMW",
-      "isImportant": true,
-      "isComplete": true,
-      "id": 2
-    },
-    {
-      "category": "shopping",
-      "name": "car",
-      "description": "BMW",
+      "name": "Car",
+      "description": "Porsche",
       "isImportant": true,
       "isComplete": false,
       "id": 2
+    },
+    {
+      "category": "Home Work",
+      "name": "int208",
+      "description": "Assignment DHCP",
+      "isImportant": false,
+      "isComplete": false,
+      "id": 3
+    },
+    {
+      "category": "Inbox",
+      "name": "Eat",
+      "description": "ice-cream",
+      "isImportant": true,
+      "isComplete": false,
+      "id": 4
     }
   ]
 }

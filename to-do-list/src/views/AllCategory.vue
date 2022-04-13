@@ -1,8 +1,22 @@
 <script setup>
-import { ref, onBeforeMount } from 'vue'
-import { categories, lists, completeToggle, importantToggle, removeList } from '../vue.js'
+import { ref } from 'vue'
+import {
+  categories,
+  lists,
+  completeToggle,
+  importantToggle,
+  removeList,
+  addNewList,
+  editList
+} from '../vue.js'
+import AddEditList from '../components/AddEditList.vue'
 
+const currentList = ref({})
 
+const editMode = (list) => {
+  console.log('เข้า editmode')
+  currentList.value = list
+}
 </script>
 
 <template>
@@ -32,7 +46,7 @@ import { categories, lists, completeToggle, importantToggle, removeList } from '
                 </label>
               </div>
 
-              <div class="grid grid-cols-2 items-center gap-x-2 ml-16">
+              <div class="grid grid-cols-3 items-center gap-x-2 ml-16">
                 <img
                   src="../assets/important.png"
                   v-if="list.isImportant"
@@ -43,12 +57,12 @@ import { categories, lists, completeToggle, importantToggle, removeList } from '
                   v-if="!list.isImportant"
                   @click="importantToggle(list)"
                 />
+                <img src="../assets/edit.png" @click="editMode(list)" />
                 <img src="../assets/delete.png" @click="removeList(list.id)" />
               </div>
             </div>
           </div>
           <!-- {{ list.isComplete }} {{ list.isImportant }} -->
-          
         </div>
         <br />
         <hr />
@@ -56,6 +70,11 @@ import { categories, lists, completeToggle, importantToggle, removeList } from '
       </div>
     </div>
   </div>
+  <AddEditList
+    :currentList="currentList"
+    @add-new-list="addNewList"
+    @edit-list="editList"
+  ></AddEditList>
 </template>
 
 <style></style>

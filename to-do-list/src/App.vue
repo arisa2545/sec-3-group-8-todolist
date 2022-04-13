@@ -2,7 +2,7 @@
 import { ref, onBeforeMount } from 'vue'
 import { categories , lists } from './vue.js'
 import CategoryList from './components/CategoryList.vue';
-import AddNewList from './components/AddNewList.vue';
+
 
 console.clear();
 
@@ -24,28 +24,28 @@ const addNewCategory = async (newCategory) => {
   } else console.log('error, cannot be added')
 }
 
-const addNewList = async (newList) => {
-  console.log(newList)
-  const res = await fetch('http://localhost:5000/lists', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-        category: newList.category,
-        name: newList.name,
-        description: newList.description,
-        isImportant: newList.isImportant,
-        isComplete: false
-    })
-  })
-  if (res.status === 201) {
-    const addedList = await res.json()
-    lists.value.push(addedList)
-    console.log('added sucessfully')
-    console.log(categories.value)
-  } else console.log('error, cannot be added')
-}
+// const addNewList = async (newList) => {
+//   console.log(newList)
+//   const res = await fetch('http://localhost:5000/lists', {
+//     method: 'POST',
+//     headers: {
+//       'content-type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//         category: newList.category,
+//         name: newList.name,
+//         description: newList.description,
+//         isImportant: newList.isImportant,
+//         isComplete: false
+//     })
+//   })
+//   if (res.status === 201) {
+//     const addedList = await res.json()
+//     lists.value.push(addedList)
+//     console.log('added sucessfully')
+//     console.log(categories.value)
+//   } else console.log('error, cannot be added')
+// }
 
 // DELETE
 const deleteCategory = async (categoryId) => {
@@ -59,7 +59,7 @@ const deleteCategory = async (categoryId) => {
   } else console.log('error, cannot delete data')
 }
 
-
+const currentList = ref({});
 
 </script>
 
@@ -74,7 +74,7 @@ const deleteCategory = async (categoryId) => {
       <div class="w-9/12 p-3 bg-white border-red-500 rounded-3xl" id="showList">
         <router-view :key="$route.fullPath"> </router-view>
         <!-- <router-view > </router-view> -->
-        <AddNewList @add-new-list="addNewList"></AddNewList>
+        <!-- <AddNewList :currentList="currentList" @add-new-list="addNewList"></AddNewList> -->
       </div>
     </div>
 
