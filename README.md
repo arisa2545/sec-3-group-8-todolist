@@ -63,23 +63,22 @@
 #### ในหน้าเว็บของเราจะมีให้เลือก category ดังนี้
   ![Image](imageProjectDescription/08.png)
  
-1. ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /All
+1. ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /
 ใน AllCategory.vue จะวนลูปแสดง categoryเเละ list ใน category นั้นๆทั้งหมด
 
-  ![Image](imageProjectDescription/09.png)
-  > description
+![Image](imageProjectDescription/09.png)
+> เมื่อคลิกที่ All Category จะมีการเรียก router ที่มี path เป็น / เเละเรียกใช้ view Allcategory.vue
   
 2. ถ้าคลิกที่ Important จะไปเรียกใช้งาน ImportantList.vue เเละ path ของ URL จะตามด้วย /Important
 ใน ImportantList.vue จะวนลูปแสดง list พร้อมทั้งชื่อ category  ที่ทําเครื่องหมายว่า Important เอาไว้
 
 ![Image](imageProjectDescription/10.png)
-> description
+> เมื่อคลิกที่ Important จะมีการเรียก router ที่มี path เป็น /important เเละเรียกใช้ view ImportantList.vue
   
 3. ถ้าคลิกที่ Category อื่นๆ จะไปเรียกใช้งาน EachCategory.vue เเละ path ของ URL จะตามด้วย /[ชื่อcategoryนั้นๆ]
 ใน ImportantList.vue จะวนลูปเเสดง list ใน category ที่เลือกเท่านั้น
 
 ![Image](imageProjectDescription/11.png)
-> description
   
  ### Component ใน application
 เเบ่งออกเป็นทั้งหมด 2 component ด้วยกัน
