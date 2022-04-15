@@ -21,7 +21,7 @@
 3. สามารถเลือกดูได้ว่าในเเต่ละหมวดหมู่มี list อะไรที่เราสร้างไว้อยู่บ้างโดย
     * 3.1 All category - หมวดที่จะแสดง list ทั้งหมด ของทุกหมวดหมู่ที่มีใน ToDoList
     * 3.2 Important - หมวดที่จะแสดงจะเเสดงเฉพาะ list ที่กดรูปดาวในหมวดหมู่นั้นๆ
-    ![Image](imageProjectDescription/03.png)
+    ![Image](imageProjectDescription/01.png)
 4. List ที่เเสดง สิ่งที่เเสดงประกอบด้วย
    * ชื่อ list
    * คําอธิบายของ list 
