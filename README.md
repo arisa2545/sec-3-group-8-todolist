@@ -60,35 +60,34 @@
     ![Image](imageProjectDescription/07.png)
       > description
 
-  
-  ในหน้าเว็บของเราจะมีให้เลือก category ดังนี้
+#### ในหน้าเว็บของเราจะมีให้เลือก category ดังนี้
   ![Image](imageProjectDescription/08.png)
  
- 1.ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /All
+1. ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /All
 ใน AllCategory.vue จะวนลูปแสดง categoryเเละ list ใน category นั้นๆทั้งหมด
 
-    ![Image](imageProjectDescription/09.png)
-      > description
+![Image](imageProjectDescription/09.png)
+> description
   
- 2.ถ้าคลิกที่ Important จะไปเรียกใช้งาน ImportantList.vue เเละ path ของ URL จะตามด้วย /Important
+2. ถ้าคลิกที่ Important จะไปเรียกใช้งาน ImportantList.vue เเละ path ของ URL จะตามด้วย /Important
 ใน ImportantList.vue จะวนลูปแสดง list พร้อมทั้งชื่อ category  ที่ทําเครื่องหมายว่า Important เอาไว้
 
-    ![Image](imageProjectDescription/10.png)
-      > description
+![Image](imageProjectDescription/10.png)
+> description
   
- 3.ถ้าคลิกที่ Category อื่นๆ จะไปเรียกใช้งาน EachCategory.vue เเละ path ของ URL จะตามด้วย /[ชื่อcategoryนั้นๆ]
+3. ถ้าคลิกที่ Category อื่นๆ จะไปเรียกใช้งาน EachCategory.vue เเละ path ของ URL จะตามด้วย /[ชื่อcategoryนั้นๆ]
 ใน ImportantList.vue จะวนลูปเเสดง list ใน category ที่เลือกเท่านั้น
 
-    ![Image](imageProjectDescription/11.png)
-      > description
+![Image](imageProjectDescription/11.png)
+> description
   
  ### Component ใน application
 เเบ่งออกเป็นทั้งหมด 2 component ด้วยกัน
-  1. AddNewList.vue
+1. AddNewList.vue
 เป็น component ที่ใช้สำหรับการเพิ่มเเละเเก้ไข list ตามที่ต้องการ โดยจะมี editMode() คอยควบคุมว่าตอนนี้กำลังทำการเพิ่มหรือเเก้ไข list อยู่
 
 
-  2. CategoryList.vue
+2. CategoryList.vue
 เป็น component ที่ใช้สำหรับการเเสดงรายการ category ทั้งหมด โดยจะมีการรับ array ของ category มาวนลูปเเสดงพร้อมทั้งใส่ router-link ให้เเต่ละ category สามารถ click เเล้วเเสดงรายการ list ทั้งหมดของ category นั้นๆได้
 
 
