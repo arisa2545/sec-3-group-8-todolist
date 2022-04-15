@@ -56,10 +56,13 @@
 
 ### Router+View ใน application
  * มีทั้งหมด 3 path ด้วยกัน เเละมี view ทั้งหมด 3 view คือ Allcategory.vue ImportantList.vue เเละ ImportantList.vue
- ในหน้าเว็บของเราจะมีให้เลือก category
 
     ![Image](imageProjectDescription/07.png)
     > description
+
+  
+  ในหน้าเว็บของเราจะมีให้เลือก category ดังนี้
+  ![Image](imageProjectDescription/08.png)
  
  1.ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /All
 ใน AllCategory.vue จะวนลูปแสดง categoryเเละ list ใน category นั้นๆทั้งหมด
@@ -81,11 +84,11 @@
   
  ### Component ใน application
 เเบ่งออกเป็นทั้งหมด 2 component ด้วยกัน
-1.AddNewList.vue
+  1.AddNewList.vue
 เป็น component ที่ใช้สำหรับการเพิ่มเเละเเก้ไข list ตามที่ต้องการ โดยจะมี editMode() คอยควบคุมว่าตอนนี้กำลังทำการเพิ่มหรือเเก้ไข list อยู่
 
 
-2.CategoryList.vue
+  2.CategoryList.vue
 เป็น component ที่ใช้สำหรับการเเสดงรายการ category ทั้งหมด โดยจะมีการรับ array ของ category มาวนลูปเเสดงพร้อมทั้งใส่ router-link ให้เเต่ละ category สามารถ click เเล้วเเสดงรายการ list ทั้งหมดของ category นั้นๆได้
 
 
