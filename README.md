@@ -58,25 +58,25 @@
  * มีทั้งหมด 3 path ด้วยกัน เเละมี view ทั้งหมด 3 view คือ Allcategory.vue ImportantList.vue เเละ ImportantList.vue
  ในหน้าเว็บของเราจะมีให้เลือก category
 
- ![Image](imageProjectDescription/01.png)
- > description
+    ![Image](imageProjectDescription/07.png)
+    > description
  
  1.ถ้าคลิกที่ All Category จะไปเรียกใช้งาน AllCategory.vue เเละ path ของ URL จะตามด้วย /All
 ใน AllCategory.vue จะวนลูปแสดง categoryเเละ list ใน category นั้นๆทั้งหมด
 
- ![Image](imageProjectDescription/01.png)
-  > description
+    ![Image](imageProjectDescription/09.png)
+    > description
   
  2.ถ้าคลิกที่ Important จะไปเรียกใช้งาน ImportantList.vue เเละ path ของ URL จะตามด้วย /Important
 ใน ImportantList.vue จะวนลูปแสดง list พร้อมทั้งชื่อ category  ที่ทําเครื่องหมายว่า Important เอาไว้
 
- ![Image](imageProjectDescription/01.png)
+ ![Image](imageProjectDescription/10.png)
   > description
   
  3.ถ้าคลิกที่ Category อื่นๆ จะไปเรียกใช้งาน EachCategory.vue เเละ path ของ URL จะตามด้วย /[ชื่อcategoryนั้นๆ]
 ใน ImportantList.vue จะวนลูปเเสดง list ใน category ที่เลือกเท่านั้น
 
- ![Image](imageProjectDescription/01.png)
+ ![Image](imageProjectDescription/11.png)
   > description
   
  ### Component ใน application
