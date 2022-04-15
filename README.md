@@ -55,7 +55,7 @@
  * เปลี่ยน icon จากรูปดาวเป็นรูป Bookmark เเทน ในส่วนของ Important ของ list
 
 ### Router+View ใน application
- * มีทั้งหมด 3 path ด้วยกัน เเละมี view ทั้งหมด 3 view คือ Allcategory.vue ImportantList.vue เเละ ImportantList.vue
+ * มีทั้งหมด 3 path ด้วยกัน เเละมี view ทั้งหมด 3 view คือ Allcategory.vue, ImportantList.vue เเละ ImportantList.vue
 
     ![Image](imageProjectDescription/07.png)
      
