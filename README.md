@@ -70,8 +70,3 @@
 
 ### App.vue
 App.vue เป็นส่วนที่เรียกใช้ Component CategoryList.vue
-
-
-### คู่มือการใช้งาน Application 
-
-
